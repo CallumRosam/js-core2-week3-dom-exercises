@@ -72,7 +72,13 @@ Task 4
 
 When a user clicks the 'Add some text' button, a new paragraph should be added below the buttons that says "Read more below."
 */
+let addTextButton = document.querySelector("#addTextBtn");
+addTextButton.addEventListener("click", addText);
 
+let paragraph = document.createElement("p");
+paragraph.innterText = "Read more below";
+let insertLocation = document.querySelector(".jumbotron");
+insertLocation.appendChild(paragraph);
 
 
 /*
